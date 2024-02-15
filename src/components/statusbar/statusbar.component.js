@@ -98,19 +98,19 @@ class Statusbar extends Component {
       #tabs ul li[active]:nth-child(5) ~ li:last-child { margin: 0 0 0 140px; }
 
       #tabs ul li[active]:nth-child(2) ~ li:last-child {
-          --flavour: #f5a97f;
+          --flavour: #ffffff;
       }
 
       #tabs ul li[active]:nth-child(3) ~ li:last-child {
-          --flavour: #ed8796;
+          --flavour: #ffffff;
       }
 
       #tabs ul li[active]:nth-child(4) ~ li:last-child {
-          --flavour: #8bd5ca;
+          --flavour: #ffffff;
       }
 
       #tabs ul li[active]:nth-child(5) ~ li:last-child {
-          --flavour: #f5bde6;
+          --flavour: #ffffff;
       }
 
       .widgets {
@@ -190,7 +190,7 @@ class Statusbar extends Component {
         <div id="tabs">
             <cols>
                 <button class="+ fastlink">
-                  <img class="fastlink-icon" src="src/img/pokeball.svg"/>
+                  <img class="fastlink-icon" src="src/img/dball.png"/>
                 </button>
                 <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">

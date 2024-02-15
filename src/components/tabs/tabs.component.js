@@ -141,18 +141,18 @@ class Tabs extends Component {
       }
 
       .categories ul:nth-child(2) {
-          --flavour: #f5a97f;
+          --flavour: #ffffff;
       }
 
       .categories ul:nth-child(3) {
-          --flavour: #ed8796;
+          --flavour: #ffffff;
       }
 
       .categories ul:nth-child(4) {
-          --flavour: #8bd5ca;
+          --flavour: #ffffff;
       }
       .categories ul:nth-child(5) {
-          --flavour: #f5bde6;
+          --flavour: #ffffff;
       }
 
       .categories ul .links {
