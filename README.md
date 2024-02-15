@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/DVK02/startpage">
-        <img alt="logo" src="https://github.com/DVK02/startpage/tree/main/docs/static/assets" height=400>
+        <img alt="logo" src="https://github.com/DVK02/startpage/tree/main/docs/static/assets/page.png?raw=True" height=400>
     </a>
 </div>
 
@@ -25,20 +25,9 @@ I've tweaked the page's style a bit to match [catppuccin] style.
 
 ## ⚙️ Configuration Dialog
 
-The default configuration file is [userconfig.js](userconfig.js), but you can change it in the configuration dialog. You can find more information about how the file works in the [original repository](https://github.com/b-coimbra/dawn). The available components are tabs, a clock, and weather.
+Please check out how the configuration works from the [original repository](https://github.com/b-coimbra/dawn).
 
-Additionally, there's a new option called `fastlink` to set the link of the Pokéball button.
-
-## 🔍 Search Dialog
-
-The search dialog allows you to display a search bar with various search engines defined in the configuration. To select each one, you simply need to prefix the query with the corresponding `!<id>`.
-
-By default, the defined search engines are:
-- `!g`: google
-- `!d`: duckduckgo
-- `!y`: youtube
-- `!r`: reddit
-- `!p`: pinterest
+Additionally, there's a new option called `fastlink` added via the repo I [forked](https://github.com/volopivoshenko/catppuccin-startpage) from, to set the link of the Dragon Ball button.
 
 ## 🖼 Available banners
 
@@ -58,3 +47,4 @@ By default, the defined search engines are:
 [dawn]: https://github.com/b-coimbra/dawn
 [catppuccin]: https://github.com/catppuccin/catppuccin
 [tartarus-startpage]:https://github.com/AllJavi/tartarus-startpage
+[catppuccin-startpage]:https://github.com/volopivoshenko/catppuccin-startpage
