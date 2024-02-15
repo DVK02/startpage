@@ -1,13 +1,12 @@
 <div align="center">
     <a href="https://github.com/DVK02/startpage">
-        <img alt="logo" src="https://github.com/DVK02/startpage/tree/main/docs/static/assets/page.png?raw=True" height=400>
+        <img alt="logo" src="https://raw.githubusercontent.com/DVK02/startpage/main/docs/static/assets/page.png" height=400>
     </a>
 </div>
 
 - [🔮 Overview](#-overview)
 - [️⌨️ Keybindings](#️️-keybindings)
 - [⚙️ Configuration Dialog](#️-configuration-dialog)
-- [🔍 Search Dialog](#-search-dialog)
 - [🖼 Available banners](#-available-banners)
 
 ## 🔮 Overview
