@@ -16,11 +16,11 @@ const default_config = {
     },
   },
   keybindings: {
-    s: "search-bar",
+    // s: "search-bar",
     // q: "config-tab",
   },
   disabled: [],
-  fastlink: "https://app.raindrop.io",
+  fastlink: "",
   openLastVisitedTab: true,
   tabs: [
     {
@@ -197,11 +197,11 @@ const default_config = {
       ],
     },
     {
-      name: "Projects",
+      name: "",
       background_url: "src/img/banners/cbg-1.gif",
       categories: [
         {
-          name: "social medias",
+          name: "",
           links: [
             {
               name: "",
@@ -224,7 +224,7 @@ const default_config = {
           ],
         },
         {
-          name: "games",
+          name: "",
           links: [
             {
               name: "",
@@ -253,7 +253,7 @@ const default_config = {
           ],
         },
         {
-          name: "video",
+          name: "",
           links: [
             {
               name: "",
