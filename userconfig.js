@@ -144,14 +144,33 @@ const default_config = {
           name: "Developer",
           links: [
             {
-              name: "C",
-              url: "https://publications.gbdirect.co.uk/c_book/",
+              name: "Roadmaps",
+              url: "https://roadmap.sh/",
+              icon: "timeline",
               icon_color: "#ffffff",
             },
             {
-              name: "",
-              url: "",
-              icon: "",
+              name: "DSA",
+              url: "https://github.com/teivah/algodeck",
+              icon: "reorder",
+              icon_color: "",
+            },
+            {
+              name: "Design Patterns",
+              url: "https://github.com/kamranahmedse/design-patterns-for-humans",
+              icon: "grid-dots",
+              icon_color: "",
+            },
+            {
+              name: "APIs",
+              url: "https://github.com/public-apis/public-apis?tab=readme-ov-file",
+              icon: "api",
+              icon_color: "",
+            },
+            {
+              name: "Resources",
+              url: "https://github.com/ripienaar/free-for-dev",
+              icon: "building-warehouse",
               icon_color: "",
             },
           ],
