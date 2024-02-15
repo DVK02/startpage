@@ -1,22 +1,8 @@
 <div align="center">
-    <a href="https://github.com/volopivoshenko/catppuccin-startpage">
-        <img alt="logo" src="https://github.com/volopivoshenko/catppuccin-startpage/blob/main/docs/static/assets/page.png?raw=True" height=400>
+    <a href="https://github.com/DVK02/startpage">
+        <img alt="logo" src="https://github.com/DVK02/startpage/tree/main/docs/static/assets" height=400>
     </a>
 </div>
-<p align="center">
-    <a href="https://www.buymeacoffee.com/volopivoshenko" target="_blank">
-        <img alt="buymeacoffee" src="https://img.shields.io/badge/buy_me_-a_coffee-ff6964?logo=buymeacoffee">
-    </a>
-    <a href="https://stand-with-ukraine.pp.ua/">
-        <img alt="standwithukraine" src="https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB">
-    </a>
-    <a href="https://stand-with-ukraine.pp.ua">
-        <img alt="standwithukraine" src="https://img.shields.io/badge/made_in-Ukraine-ffd700.svg?labelColor=0057b7">
-    </a>
-    <a href="https://wakatime.com/badge/user/9862508c-0a86-427a-929c-46186f2d191a/project/6f149575-e390-48f9-9b7a-fd557bda4a6a">
-        <img src="https://wakatime.com/badge/user/9862508c-0a86-427a-929c-46186f2d191a/project/6f149575-e390-48f9-9b7a-fd557bda4a6a.svg" alt="wakatime">
-    </a>
-</p>
 
 - [🔮 Overview](#-overview)
 - [️⌨️ Keybindings](#️️-keybindings)
