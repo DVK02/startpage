@@ -1,9 +1,9 @@
 class Search extends Component {
   refs = {
-    search: "#search",
+    search: '#search',
     input: '#search input[type="text"]',
-    engines: ".search-engines",
-    close: ".close",
+    engines: '.search-engines',
+    close: '.close'
   };
 
   constructor() {
@@ -56,8 +56,8 @@ class Search extends Component {
       }
 
       #search input::selection {
-        background: #6e738d;
-        color: #cad3f5;
+          background: #6e738d;
+          color: #cad3f5;
       }
 
       #search .close {
@@ -104,7 +104,10 @@ class Search extends Component {
   }
 
   imports() {
-    return [this.resources.fonts.roboto, this.resources.icons.material];
+    return [
+      this.resources.fonts.roboto,
+      this.resources.icons.material
+    ];
   }
 
   template() {
@@ -125,38 +128,44 @@ class Search extends Component {
   }
 
   activate() {
-    this.refs.search.classList.add("active");
+    this.refs.search.classList.add('active');
     this.refs.input.scrollIntoView();
     setTimeout(() => this.refs.input.focus(), 100);
   }
 
   deactivate() {
-    this.refs.search.classList.remove("active");
+    this.refs.search.classList.remove('active');
   }
 
   handleSearch(event) {
     const { target, key } = event;
 
-    let args = target.value.split(" ");
+    let args = target.value.split(' ');
     let prefix = args[0];
-    let defaultEngine = this.engines["g"][0];
+    let defaultEngine = this.engines['d'][0];
     let engine = defaultEngine;
 
-    this.refs.engines.childNodes.forEach((engine) => {
-      if (prefix === engine.firstChild.innerHTML) engine.classList.add("active");
-      else engine.classList.remove("active");
+    this.refs.engines.childNodes.forEach(engine => {
+      if (prefix === engine.firstChild.innerHTML)
+        engine.classList.add('active');
+      else
+        engine.classList.remove('active');
     });
 
-    if (key === "Enter") {
-      if (prefix.indexOf("!") === 0) {
+    if (key === 'Enter') {
+      if (prefix.indexOf('!') === 0) {
         engine = this.engines[prefix.substr(1)][0];
         args = args.slice(1);
       }
 
-      window.location = engine + encodeURI(args.join(" "));
+      window.open(engine + encodeURI(args.join(' ')), '_blank');
+
+      target.value = '';
+      this.deactivate();
     }
 
-    if (key === "Escape") this.deactivate();
+    if (key === 'Escape')
+      this.deactivate();
   }
 
   setEvents() {

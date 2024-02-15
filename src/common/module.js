@@ -1,6 +1,5 @@
 const components = {
   "search-bar": Search,
-  "config-tab": ConfigTab,
   "status-bar": Statusbar,
   "current-time": Clock,
   "weather-forecast": Weather,

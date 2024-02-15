@@ -38,12 +38,12 @@ const default_config = {
   },
   search: {
     engines: {
-      d: ["https://duckduckgo.com/html?q=", "DuckDuckGo"],
+      d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
+      w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
     },
   },
   keybindings: {
-    // s: "search-bar",
-    // q: "config-tab",
+    s: "search-bar",
   },
   disabled: [],
   fastlink: "",
