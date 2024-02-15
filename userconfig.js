@@ -1,5 +1,31 @@
 let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 
+function getBookUrl(book) {
+  // URLs for the books
+  const urls = {
+    local: {
+      "Linux Bible": "/run/media/dan/hdd1/Computer Science/CS Books/Christopher Negus - Linux Bible - the comprehensive tutorial resource.pdf",
+      "Pragmatic Programmer": "/run/media/dan/hdd1/Computer Science/CS Books/Andrew Hunt, David Thomas - The Pragmatic Programmer_ From Journeyman to Master-Addison-Wesley Professional (1999).pdf",
+      "Swipe to Unlock": "/run/media/dan/hdd1/Product Management/PM Books/Parth Detroja_ Neel Mehta_ Aditya Agashe - Swipe to Unlock_ The Primer on Technology and Business Strategy-Createspace Independent Publishing Platform (2018).pdf",
+    },
+    web: {
+      "Linux Bible": "https://amzn.to/3SIF94y",
+      "Pragmatic Programmer": "https://amzn.to/4bASeWp",
+      "Swipe to Unlock": "https://amzn.to/3wk2MZV"
+    }
+  };
+
+  // Check if the website is loaded locally or on the web
+  const isLocal = window.location.href.startsWith("file:");
+
+  // Determine the environment and select the appropriate URL
+  const environment = isLocal ? "local" : "web";
+
+  // Return the URL for the specified book
+  return urls[environment][book];
+}
+
+
 const default_config = {
   overrideStorage: true,
   temperature: {
@@ -61,19 +87,19 @@ const default_config = {
           links: [
             {
               name: "Linux Bible",
-              url: "/run/media/dan/hdd1/Computer Science/CS Books/Christopher Negus - Linux Bible - the comprehensive tutorial resource.pdf",
+              url: getBookUrl("Linux Bible"),
               icon: "terminal",
               icon_color: "#cad3f5",
             },
             {
               name: "Pragmatic Programmer",
-              url: "/run/media/dan/hdd1/Computer Science/CS Books/Andrew Hunt, David Thomas - The Pragmatic Programmer_ From Journeyman to Master-Addison-Wesley Professional (1999).pdf",
+              url: getBookUrl("Pragmatic Programmer"),
               icon: "code-dots",
               icon_color: "#b7bdf8",
             },
             {
               name: "Swipe to Unlock",
-              url: "/run/media/dan/hdd1/Product Management/PM Books/Parth Detroja_ Neel Mehta_ Aditya Agashe - Swipe to Unlock_ The Primer on Technology and Business Strategy-Createspace Independent Publishing Platform (2018).pdf",
+              url: getBookUrl("Swipe to Unlock"),
               icon: "arrow-down-circle",
               icon_color: "#8bd5ca",
             },
