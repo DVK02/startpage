@@ -179,19 +179,19 @@ const default_config = {
           name: "Product Manager",
           links: [
             {
-              name: "",
+              name: "UI/UX",
               url: "",
               icon: "",
               icon_color: "",
             },
             {
-              name: "",
+              name: "User Research",
               url: "",
               icon: "",
               icon_color: "",
             },
             {
-              name: "",
+              name: "Statistics",
               url: "",
               icon: "",
               icon_color: "",
