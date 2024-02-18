@@ -4,14 +4,26 @@ function getBookUrl(book) {
   // URLs for the books
   const urls = {
     local: {
-      "Linux Bible": "/run/media/dan/hdd1/Computer Science/CS Books/Christopher Negus - Linux Bible - the comprehensive tutorial resource.pdf",
-      "Pragmatic Programmer": "/run/media/dan/hdd1/Computer Science/CS Books/Andrew Hunt, David Thomas - The Pragmatic Programmer_ From Journeyman to Master-Addison-Wesley Professional (1999).pdf",
-      "Swipe to Unlock": "/run/media/dan/hdd1/Product Management/PM Books/Parth Detroja_ Neel Mehta_ Aditya Agashe - Swipe to Unlock_ The Primer on Technology and Business Strategy-Createspace Independent Publishing Platform (2018).pdf",
+      "linux_bible": "/mnt/hdd1/Computer Science/CS Books/linux_bible.pdf",
+      "pragmatic_programmer": "/mnt/hdd1/Computer Science/CS Books/the_pragmatic_programmer.pdf",
+      "swipe_to_unlock": "/mnt/hdd1/Product Management/PM Books/swipe_to_unlock.pdf",
+      "continuous_discovery": "/mnt/hdd1/Product Management/PM Books/continuous_discovery_habits.epub",
+      "dont_make_me_think": "/mnt/hdd1/Product Management/PM Books/dont_make_me_think.epub",
+      "hacking_growth": "/mnt/hdd1/Product Management/PM Books/hacking_growth.epub",
+      "measure_what_matters": "/mnt/hdd1/Product Management/PM Books/measure_what_matters.epub",
+      "product_management_in_practice": "/mnt/hdd1/Product Management/PM Books/product_management_in_practice.epub",
+      "lean_analytics": "/mnt/hdd1/Product Management/PM Books/lean_analytics.pdf"
     },
     web: {
-      "Linux Bible": "https://amzn.to/3SIF94y",
-      "Pragmatic Programmer": "https://amzn.to/4bASeWp",
-      "Swipe to Unlock": "https://amzn.to/3wk2MZV"
+      "linux_bible": "https://amzn.to/3SIF94y",
+      "pragmatic_programmer": "https://amzn.to/4bASeWp",
+      "swipe_to_unlock": "https://amzn.to/3wk2MZV",
+      "continuous_discovery": "https://amzn.to/3uEytMY",
+      "dont_make_me_think": "https://amzn.to/49BL6qU",
+      "hacking_growth": "https://amzn.to/3OOyntb",
+      "measure_what_matters": "https://amzn.to/3ULtN2u",
+      "product_management_in_practice": "https://amzn.to/3UINub6",
+      "lean_analytics": "https://amzn.to/49jpQqi"
     }
   };
 
@@ -87,19 +99,19 @@ const default_config = {
           links: [
             {
               name: "Linux Bible",
-              url: getBookUrl("Linux Bible"),
+              url: getBookUrl("linux_bible"),
               icon: "terminal",
               icon_color: "#cad3f5",
             },
             {
               name: "Pragmatic Programmer",
-              url: getBookUrl("Pragmatic Programmer"),
+              url: getBookUrl("pragmatic_programmer"),
               icon: "code-dots",
               icon_color: "#b7bdf8",
             },
             {
               name: "Swipe to Unlock",
-              url: getBookUrl("Swipe to Unlock"),
+              url: getBookUrl("swipe_to_unlock"),
               icon: "arrow-down-circle",
               icon_color: "#8bd5ca",
             },
@@ -138,7 +150,7 @@ const default_config = {
     },
     {
       name: "dev+ pm",
-      background_url: "src/img/banners/cbg-8.gif",
+      background_url: "src/img/banners/cbg-7.gif",
       categories: [
         {
           name: "Developer",
@@ -146,32 +158,32 @@ const default_config = {
             {
               name: "Roadmaps",
               url: "https://roadmap.sh/",
-              icon: "timeline",
+              icon: "route",
               icon_color: "#ffffff",
             },
             {
               name: "DSA",
               url: "https://github.com/teivah/algodeck",
               icon: "reorder",
-              icon_color: "",
+              icon_color: "#f4dbd6",
             },
             {
               name: "Design Patterns",
               url: "https://github.com/kamranahmedse/design-patterns-for-humans",
               icon: "grid-dots",
-              icon_color: "",
+              icon_color: "#f0c6c6",
             },
             {
               name: "APIs",
               url: "https://github.com/public-apis/public-apis?tab=readme-ov-file",
               icon: "api",
-              icon_color: "",
+              icon_color: "#f5bde6",
             },
             {
               name: "Resources",
               url: "https://github.com/ripienaar/free-for-dev",
               icon: "building-warehouse",
-              icon_color: "",
+              icon_color: "#c6a0f6",
             },
           ],
         },
@@ -179,28 +191,34 @@ const default_config = {
           name: "Product Manager",
           links: [
             {
-              name: "UI/UX",
-              url: "",
-              icon: "",
-              icon_color: "",
+              name: "Design",
+              url: getBookUrl("dont_make_me_think"),
+              icon: "brand-radix-ui",
+              icon_color: "#ed8796",
             },
             {
               name: "User Research",
-              url: "",
-              icon: "",
-              icon_color: "",
+              url: getBookUrl("continuous_discovery"),
+              icon: "user-search",
+              icon_color: "#ee99a0",
             },
             {
-              name: "Statistics",
-              url: "",
-              icon: "",
-              icon_color: "",
+              name: "Data",
+              url: getBookUrl("lean_analytics"),
+              icon: "report-analytics",
+              icon_color: "#f5a97f",
             },
             {
-              name: "",
-              url: "",
-              icon: "",
-              icon_color: "",
+              name: "Measure",
+              url: getBookUrl("measure_what_matters"),
+              icon: "box",
+              icon_color: "#8bd5ca",
+            },
+            {
+              name: "Growth",
+              url: getBookUrl("hacking_growth"),
+              icon: "box",
+              icon_color: "#a6da95",
             },
           ],
         },
@@ -242,8 +260,8 @@ const default_config = {
       ],
     },
     {
-      name: "",
-      background_url: "src/img/banners/cbg-1.gif",
+      name: "Tech",
+      background_url: "src/img/banners/cbg-8.gif",
       categories: [
         {
           name: "",
